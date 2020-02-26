@@ -6,7 +6,7 @@ export class GithubController {
   constructor(private readonly githubService: GithubService) {}
 
   @Get()
-  userData() {
-    return this.githubService.getUserData();
+  async userData(): Promise<any> {
+    return await this.githubService.getRepos();
   }
 }

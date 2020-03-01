@@ -3,4 +3,4 @@
 /public
 .env.development
 .env.production
-
+/src/data/config.js

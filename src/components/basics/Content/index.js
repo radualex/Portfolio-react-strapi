@@ -7,7 +7,7 @@ const Content = style.div`
 const ContentStats = style.div`
 display: flex;
 align-items: center;
-padding: .3rem 0;
+padding: .9rem 0;
 
 div {
   display: flex;

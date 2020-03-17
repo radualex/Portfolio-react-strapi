@@ -1,6 +1,6 @@
 import React from "react";
-// import { Link } from "gatsby";
 
+import 'semantic-ui-css/semantic.min.css'
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Github } from "../components/landing/github";

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding-bottom: 4rem;
+  padding-bottom: 0;
   background-size: contain;
   background-position: right top;
   background-repeat: no-repeat;

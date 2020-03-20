@@ -1,10 +1,16 @@
 import styled from 'styled-components';
+import overlayBackground from '../../../assets/design/overlay-small.jpg';
 
 export const Wrapper = styled.div`
-  padding-bottom: 0;
-  background-size: contain;
-  background-position: right top;
+  margin-bottom: 4rem;
+  background-image: url(${overlayBackground});
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 1000px){
+    background-image: none;
+  }
 `;
 
 export const IntroWrapper = styled.div`
@@ -20,6 +26,10 @@ export const IntroWrapper = styled.div`
 
 export const Details = styled.div`
   flex: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  height: 500px;
 
   @media (max-width: 960px) {
     width: 100%;
@@ -29,7 +39,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 36pt;
-    color: #212121;
+    color: #FFFFFF;
 
     @media (max-width: 680px) {
       font-size: 30pt;

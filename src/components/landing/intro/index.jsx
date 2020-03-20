@@ -9,9 +9,9 @@ export const Intro = () => (
 				<h1>Hi There!</h1>
 				<h4>"Quote to quote, paycheck to paycheck" - Radu Stoica</h4>
 			</Details>
-			<Thumbnail>
+			{/* <Thumbnail>
 				<img src={commitImg} alt="I’m John and I’m a Backend & Devops engineer!" />
-			</Thumbnail>
+			</Thumbnail> */}
 		</IntroWrapper>
 	</Wrapper>
 )

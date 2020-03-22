@@ -1,15 +1,16 @@
 import styled from 'styled-components';
-import overlayBackground from '../../../assets/design/overlay-small.jpg';
+import overlay from '../../../assets/design/overlay.jpg';
 
 export const Wrapper = styled.div`
   margin-bottom: 4rem;
-  background-image: url(${overlayBackground});
+  background-image: url(${overlay});
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 680px){
     background-image: none;
+    background: #333333;
   }
 `;
 
@@ -30,6 +31,8 @@ export const Details = styled.div`
   margin: 0 auto;
   text-align: center;
   height: 500px;
+  display:flex;
+  align-content: center;
 
   @media (max-width: 960px) {
     width: 100%;
@@ -41,7 +44,7 @@ export const Details = styled.div`
     font-size: 36pt;
     color: #FFFFFF;
 
-    @media (max-width: 680px) {
+    @media screen and (max-width: 680px) {
       font-size: 30pt;
     }
   }
@@ -50,13 +53,17 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
-    color: #707070;
+    color: #e1f4f3;
     line-height: 3rem;
 
-    @media (max-width: 680px) {
+    @media screen and (max-width: 680px) {
       font-size: 26pt;
     }
   }
+`;
+
+export const WrapperCenter = styled.div`
+  margin: auto;
 `;
 
 export const Thumbnail = styled.div`

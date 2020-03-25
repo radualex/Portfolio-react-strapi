@@ -4,6 +4,7 @@ import overlay from '../../../assets/design/overlay.jpg';
 export const Wrapper = styled.div`
   margin-bottom: 4rem;
   background-image: url(${overlay});
+  // background: #333333;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

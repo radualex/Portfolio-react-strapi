@@ -61,7 +61,6 @@ export const Github = () => {
             href={node.url}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ "text-decoration": "none", "color": "inherit", "text-transform": "capitalize" }}
           >
             <Content>
               <h6>{node.name}</h6>
@@ -78,7 +77,7 @@ export const Github = () => {
             </ContentStats>
             <ContentLanguages>
               {node.languages.nodes.map(({ name }) => (
-                <Label size="small">
+                <Label size="mini" style={{"background":"#FFFFFF"}}>
                   {name}
                 </Label>
               ))}

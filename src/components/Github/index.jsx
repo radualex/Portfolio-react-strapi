@@ -1,16 +1,16 @@
 import React from "react";
 
-import { Wrapper } from "../../basics/Wrapper";
-import { Grid } from "../../basics/Grid";
-import { Card } from "../../basics/Card";
-import { Content, ContentLanguages, ContentStats } from "../../basics/Content";
+import { Wrapper } from "../Wrapper/wrapper";
+import { Grid } from "../Grid/grid";
+import { Card } from "../Card/card";
+import { Content, ContentLanguages, ContentStats } from "../Content/content";
 
 import { Label } from "semantic-ui-react";
 
 import { useStaticQuery, graphql } from "gatsby";
 
-import commitIcon from "../../../assets/icons/commit.svg";
-import prIcon from "../../../assets/icons/pullrequest.svg";
+import commitIcon from "../../assets/icons/commit.svg";
+import prIcon from "../../assets/icons/pullrequest.svg";
 
 export const Github = () => {
   const githubData = useStaticQuery(
@@ -77,7 +77,7 @@ export const Github = () => {
             </ContentStats>
             <ContentLanguages>
               {node.languages.nodes.map(({ name }) => (
-                <Label size="mini" style={{"background":"#FFFFFF"}}>
+                <Label size="mini" style={{"background":"#151516", "color": "#fff"}}>
                   {name}
                 </Label>
               ))}

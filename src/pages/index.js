@@ -3,8 +3,8 @@ import React from "react";
 import 'semantic-ui-css/semantic.min.css'
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { Github } from "../components/landing/github";
-import { Intro } from "../components/landing/intro";
+import { Github } from "../components/Github";
+import { Intro } from "../components/Intro";
 
 const IndexPage = () => (
   <Layout>

@@ -1,5 +1,5 @@
 import React from "react";
-import commitImg from "../../../assets/icons/commit.svg";
+import commitImg from "../../assets/icons/commit.svg";
 import Header from "./header";
 import {
   Wrapper,

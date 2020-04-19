@@ -21,7 +21,7 @@ div {
   }
 
   span {
-    color: #000;
+    color: #151516;
     margin-left: 0.3rem;
     font-size: 13px;
   }

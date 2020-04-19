@@ -1,17 +1,15 @@
 import styled from 'styled-components';
-import overlay from '../../../assets/design/overlay.jpg';
 
 export const Wrapper = styled.div`
   margin-bottom: 4rem;
-  background-image: url(${overlay});
-  // background: #333333;
+  background: #151617;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 
   @media screen and (max-width: 680px){
     background-image: none;
-    background: #333333;
+    background: #151617;
   }
 `;
 
@@ -43,7 +41,6 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 36pt;
-    color: #FFFFFF;
 
     @media screen and (max-width: 680px) {
       font-size: 30pt;
@@ -54,7 +51,6 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
-    color: #e1f4f3;
     line-height: 3rem;
 
     @media screen and (max-width: 680px) {

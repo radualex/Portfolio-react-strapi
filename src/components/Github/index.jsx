@@ -77,7 +77,10 @@ export const Github = () => {
             </ContentStats>
             <ContentLanguages>
               {node.languages.nodes.map(({ name }) => (
-                <Label size="mini" style={{"background":"#151516", "color": "#fff"}}>
+                <Label
+                  size="mini"
+                  style={{ background: "#151516", color: "#fff" }}
+                >
                   {name}
                 </Label>
               ))}

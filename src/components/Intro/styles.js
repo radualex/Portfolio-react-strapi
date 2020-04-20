@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.section`
   margin-bottom: 4rem;
   background: #151617;
   background-size: cover;
@@ -29,7 +29,7 @@ export const Details = styled.div`
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
-  height: 500px;
+  height: 520px;
   display:flex;
   align-content: center;
 

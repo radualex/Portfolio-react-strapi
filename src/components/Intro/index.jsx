@@ -22,11 +22,10 @@ export const Intro = () => {
   `);
   return (
     <Wrapper>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <IntroWrapper>
         <Details>
           <WrapperCenter>
-            <h1>Hi There!</h1>
+            <h1>Hi There! I'm Radu.</h1>
             <h4>I'm a web developer.</h4>
           </WrapperCenter>
         </Details>

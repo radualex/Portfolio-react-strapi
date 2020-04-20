@@ -9,8 +9,8 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer style={{
-          "text-align": "center",
-          "margin-top": "1rem"
+          "textAlign": "center",
+          "marginTop": "1rem"
 
         }}>
           © {new Date().getFullYear()}, Built with

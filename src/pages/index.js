@@ -1,6 +1,8 @@
 import React from "react";
 
-import 'semantic-ui-css/semantic.min.css'
+import "./index.css";
+
+import "semantic-ui-css/semantic.min.css";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Github } from "../components/Github";
@@ -10,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Intro />
-    <Github />
+    {/* <Github /> */}
   </Layout>
 );
 

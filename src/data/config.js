@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
     defaultTitle: 'Radu-Alexandru Stoica',
     logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
-    author: 'Radu-Alexandru Stoica',
+    author: 'Radu',
     url: 'https://gatsby-theme-portfolio.smakosh.com',
     legalName: 'Radu-Alexandru Stoica',
     defaultDescription: 'This is Radu.',
@@ -14,8 +14,6 @@ module.exports = {
       linkedin: 'https://www.linkedin.com/in/rastoica/',
       instagram: 'https://instagram.com/radualex94',
     },
-    themeColor: '#6b63ff',
-    backgroundColor: '#6b63ff',
     social: {
       twitter: '@Al_Radu',
     },

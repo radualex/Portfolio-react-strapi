@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.section`
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
   background: #151617;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   @media screen and (max-width: 680px){
     background-image: none;
@@ -14,7 +15,7 @@ export const Wrapper = styled.section`
 `;
 
 export const IntroWrapper = styled.div`
-  padding: 4rem 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

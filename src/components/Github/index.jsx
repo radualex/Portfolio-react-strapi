@@ -7,54 +7,16 @@ import { Content, ContentLanguages, ContentStats } from "../Content/content";
 
 import { Label } from "semantic-ui-react";
 
-import { useStaticQuery, graphql } from "gatsby";
+import { useGithubData } from "./api.js";
 
 import commitIcon from "../../assets/icons/commit.svg";
 import prIcon from "../../assets/icons/pullrequest.svg";
 
 export const Github = () => {
-  const githubData = useStaticQuery(
-    graphql`
-      {
-        github {
-          viewer {
-            topRepositories(
-              first: 9
-              orderBy: { field: STARGAZERS, direction: DESC }
-            ) {
-              edges {
-                node {
-                  id
-                  name
-                  url
-                  description
-                  languages(first: 3) {
-                    nodes {
-                      name
-                    }
-                  }
-                  object(expression: "master") {
-                    ... on GitHub_Commit {
-                      history {
-                        totalCount
-                      }
-                    }
-                  }
-                  pullRequests {
-                    totalCount
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `
-  );
   return (
     <Wrapper id="projects">
       <Grid>
-        {githubData.github.viewer.topRepositories.edges.map(({ node }) => (
+        {useGithubData().map(({ node }) => (
           <Card
             key={node.id}
             as="a"

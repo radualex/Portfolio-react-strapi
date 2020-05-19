@@ -1,54 +1,39 @@
-@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+@import url(//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+@import "../main.scss";
+
+$sizeMenu: 0.8;
+
+// TODO: clean-up.
+// TODO: Fix the responsiveness.
 
 * {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   position: relative;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  background: #f06060;
-  color: #fff;
-}
-
 .cn-wrapper {
   font-size: 1em;
-  width: 26em;
-  height: 26em;
-  display: none;
-  //   overflow: hidden;
-  //   position: fixed;
-  z-index: 10;
-  bottom: -13em;
+  position: fixed;
   left: 50%;
-  border-radius: 50%;
-  margin-left: -13em;
-  //   -webkit-transform: scale(0.1);
-  //   -ms-transform: scale(0.1);
-  //   -moz-transform: scale(0.1);
-  //   transform: scale(0.1);
-  //   pointer-events: none;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  margin-left: -1.75em;
+  bottom: -1.75em;
+  padding-bottom: 12.7em;
+  visibility: hidden;
+  z-index: 10;
 }
 
 .opened-nav {
-  display: block;
+  visibility: visible;
   border-radius: 50%;
   pointer-events: auto;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale($sizeMenu);
+  -moz-transform: scale($sizeMenu);
+  -ms-transform: scale($sizeMenu);
+  transform: scale($sizeMenu);
 }
 
 .cn-overlay {
@@ -76,13 +61,13 @@ body {
 .cn-button {
   border: none;
   background: none;
-  color: #f06060;
+  color: $white;
   text-align: center;
   font-size: 1.8em;
-  padding-bottom: 1em;
+  padding-bottom: 1.6em;
   height: 3.5em;
   width: 3.5em;
-  background-color: #fff;
+  background-color: $color2;
   position: fixed;
   left: 50%;
   margin-left: -1.75em;
@@ -92,10 +77,13 @@ body {
   z-index: 11;
 }
 
-.cn-button:hover,
-.cn-button:active,
+.cn-button:hover {
+  color: $color4;
+  outline: 0;
+}
+
 .cn-button:focus {
-  color: #aa1010;
+  outline: 0;
 }
 
 .cn-wrapper li {
@@ -127,14 +115,16 @@ body {
   right: -7.25em;
   border-radius: 50%;
   text-decoration: none;
-  color: #fff;
+  color: $color2;
   padding-top: 1.8em;
   text-align: center;
   -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
   -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
   -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
   transform: skew(-50deg) rotate(-70deg) scale(1);
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   -webkit-transition: opacity 0.3s, color 0.3s;
   -moz-transition: opacity 0.3s, color 0.3s;
   transition: opacity 0.3s, color 0.3s;
@@ -185,27 +175,23 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 }
 
 .cn-wrapper li:nth-child(odd) a {
-  background-color: #a11313;
-  background-color: hsla(0, 88%, 63%, 1);
+  background-color: $color3;
 }
 
 .cn-wrapper li:nth-child(even) a {
-  background-color: #a61414;
-  background-color: hsla(0, 88%, 65%, 1);
+  background-color: $color3;
 }
 
 /* active style */
 .cn-wrapper li.active a {
-  background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
+  background-color: $color1;
 }
 
 /* hover style */
 .cn-wrapper li:not(.active) a:hover,
 .cn-wrapper li:not(.active) a:active,
 .cn-wrapper li:not(.active) a:focus {
-  background-color: #b31515;
-  background-color: hsla(0, 88%, 70%, 1);
+  background-color: $color1;
 }
 .cn-wrapper li:not(.active) a:focus {
   position: fixed;

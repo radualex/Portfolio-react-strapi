@@ -22,6 +22,7 @@ export class RadialMenu extends React.Component {
     ev.stopPropagation();
   };
 
+  // TODO: add text above menu for each li when hover and then active.
   render() {
     return (
       <div className="component">
